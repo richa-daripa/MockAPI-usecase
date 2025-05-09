@@ -36,7 +36,7 @@ const Details = () => {
                         <table>
                             <thead>
                                 <tr>
-                                    <th colSpan="3" style={{ fontSize: "25px", background: "skyblue" }}>User Details</th>
+                                    <th colSpan="3" style={{ fontSize: "25px", background: "skyblue" }}>User Dashboard</th>
                                 </tr>
                                 <tr>
                                     <th style={{ fontSize: "18px" }}>UserID</th>
@@ -52,7 +52,7 @@ const Details = () => {
                                             <td>{i.name}</td>
                                             <td>
                                                 <div className='actions'>
-                                                    <button onClick={()=>{setSelect(i); setShow(true)}}>View</button>
+                                                    <button onClick={() => { setSelect(i); setShow(true) }}>View</button>
                                                     <button onClick={() => { handleDelete(i.id) }}>Delete</button>
                                                 </div>
                                             </td>
@@ -63,13 +63,13 @@ const Details = () => {
                             </tbody>
                         </table>
                     ) : (
-                        <p>Loading.....</p>
+                        <p>Loading......</p>
                     )
                 }
 
                 {
                     show && select && (
-                        <ProfileCard setShow={setShow} selectUser={select}/>
+                        <ProfileCard setShow={setShow} selectUser={select} />
                     )
                 }
 

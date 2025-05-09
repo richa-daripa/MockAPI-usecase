@@ -11,13 +11,15 @@ const Login = () => {
     const [name, setName] = useState("");
     const [pwd, setPwd] = useState("");
     const navigate = useNavigate();
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (name === username && pwd === password) {
             navigate("/details");
+            
         }else{
-            alert("Either username or password is wrong");
+            alert("Invalid username or password");
         }
     }
 
