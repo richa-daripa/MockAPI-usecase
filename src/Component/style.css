@@ -127,3 +127,10 @@ p {
         opacity: 1;
     }
 }
+
+.error-msg{
+    display: block;
+    font-size: 14px;
+    color: grey;
+    margin-top: 10px;
+}

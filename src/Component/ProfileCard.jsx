@@ -14,9 +14,9 @@ const ProfileCard = ({setShow, selectUser}) => {
     return (
         <div className="modal">
             <div className="card">
-                <img src={selectUser.avatar} alt="" />
+                <img src={selectUser.image} alt="" />
                 <h1>{selectUser.name}</h1>
-                <p>Software Developer</p>
+                <p>Software developer</p>
                 <button onClick={() => setShow(false)}>Close</button>
             </div>
         </div>
